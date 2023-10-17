@@ -17,5 +17,8 @@ public class CourseJdbcCommandLineRunner implements CommandLineRunner {
         courseJdbcRepository.insert(new Course(3,"Hibernate","Guru"));
 
         courseJdbcRepository.deleteById(1);
+
+        System.out.println(courseJdbcRepository.getById(2));
+        System.out.println(courseJdbcRepository.getById(3));
     }
 }
