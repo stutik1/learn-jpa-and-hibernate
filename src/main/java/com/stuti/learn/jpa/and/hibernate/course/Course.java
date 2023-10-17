@@ -1,6 +1,11 @@
 package com.stuti.learn.jpa.and.hibernate.course;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Course {
+    @Id
     private long id ;
     private String name ;
     private String author;
@@ -24,6 +29,18 @@ public class Course {
 
     public String getAuthor() {
         return author;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     @Override
