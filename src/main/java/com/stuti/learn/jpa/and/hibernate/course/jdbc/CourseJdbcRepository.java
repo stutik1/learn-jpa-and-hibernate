@@ -1,6 +1,5 @@
 package com.stuti.learn.jpa.and.hibernate.course.jdbc;
 
-import com.stuti.learn.jpa.and.hibernate.course.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -17,7 +16,7 @@ public class CourseJdbcRepository {
             values(1,'Jpa','Megha'),(2,'H2','Stuti');
         """;
 
-    public void insert(Course course){
+    public void insert(){
         jdbcTemplate.update(INSERT_QUERY);
     }
 }
